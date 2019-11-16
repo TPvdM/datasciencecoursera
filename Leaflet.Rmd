@@ -1,0 +1,15 @@
+---
+title: "Developing data products, R Markdown and Leaflet"
+author: "Tom -vdM"
+date: "16 november 2019"
+output: html_document
+---
+
+```{r}
+require(leaflet)
+Liberty <- c("<a href= 'https://en.wikipedia.org/wiki/Statue_of_Liberty' >Statue of Liberty</a>")
+
+leaflet() %>% 
+    addTiles() %>% 
+    addMarkers(lat=40.689247, lng =-74.044502, popup = Liberty)
+```
