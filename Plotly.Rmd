@@ -1,0 +1,18 @@
+---
+title: "Developing data products, R Markdown and Plotly"
+author: "Tom -vdM"
+date: "17 november 2019"
+output: html_document
+---
+
+#Peer-graded Assignment: R Markdown Presentation & Plotly
+
+Loading data of the quarterly data of the Number of Australian Residents
+```{r}
+require(plotly)
+data <- austres
+```
+
+```{r}
+plot_ly(x= time(data), y = data, type = "bar") %>% layout(title = "Number of Australian Residents")
+```
