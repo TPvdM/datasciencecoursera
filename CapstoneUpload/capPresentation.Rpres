@@ -1,0 +1,31 @@
+Capstone project of the Coursera Specialization "Data Science"
+========================================================
+author: Thomas van der Meer
+date: 23/11/2019
+autosize: true
+
+Project objective
+========================================================
+
+The goal of this project is to predict the consequetive word of a sentence. In order to obtain this goal, the following was performed:
+- Data cleaning
+- Exploratory analysis
+- Creating a prediction model
+
+Materials and Methods
+========================================================
+
+Raw data originated from HC Corpora. Data was transformed to lower case, punctuation was removed, as were links, white spaces, numbers and special characters. Successively, data was transformed into n-grams using tokenization. 
+
+Aggregated bi-, tri-, and quadgram term frequency matrixes were tranferred into dictionaires. This data was then used to predict next word in connection with the user's input in an application designed for this purpose. 
+
+Application
+========================================================
+
+
+References
+========================================================
+- The next word prediction application
+- The underlying code for the application
+- The (current) presentation
+- The Coursera Data Science Specialization
