@@ -1,0 +1,36 @@
+Capstone project of the Coursera Specialization "Data Science"
+========================================================
+author: Thomas van der Meer
+date: Jan 23 2020
+autosize: true
+
+Project objective
+========================================================
+
+The goal of this project is to predict the consequetive word of a sentence. In order to obtain this goal, the following was performed:
+- Data cleaning
+- Exploratory analysis
+- Creating a prediction model
+- Implementing the prediction model in a Shiny application
+
+Materials and Methods
+========================================================
+
+Raw data originated from HC Corpora. Data was transformed to lower case, punctuation was removed, as were links, white spaces, numbers and special characters. Successively, data was transformed into n-grams using tokenization. 
+
+Aggregated bi-, tri-, and quadgram term frequency matrixes were tranferred into dictionaires. This data was then used to predict next word in connection with the user's input in an application designed for this purpose. 
+
+Application
+========================================================
+
+The prediction model was implemented in a application using Shiny. 
+
+The user can insert a word or sentence in the field "Enter text here". The tool automatically detects when the user stops typing, and predicts the subsequent word based on up to the last three words inserted. The number of words on which the prediction is based, is showed in the lower right corner ("Predicted using:"). Above, the predicted word is displayed. In the upper right of the screen, the inputted text is displayed. 
+
+Further information on the goal of the application and its source code is shown in the tab "About"
+
+References
+========================================================
+- [The next word prediction application](https://tvdm.shinyapps.io/NextWordPredictor/)
+- [The underlying code for the application](https://github.com/TPvdM/datasciencecoursera/tree/master/NextWordPredictor)
+- [The Coursera Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science)
